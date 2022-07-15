@@ -1,0 +1,86 @@
+body {
+    background-color: aqua;
+    margin: 0px;
+    padding: 0px;
+
+}
+header {
+    background-color: darkgray;
+}
+a {
+    display: inline-block;
+    color: antiquewhite;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+ul {
+    list-style: none;
+}
+.first {
+    position: relative;
+    width: 553px;
+    text-align:left;
+    margin: 0px auto;
+}
+.first>li {
+    display: inline-block;
+}
+.first>li>a {
+    padding: 25px 35px;
+    text-transform: uppercase;
+}
+.first>li>a:hover {
+    background-color:darkkhaki;
+}
+.second {
+    position: absolute;
+    top: 68px;
+    background-color:darkkhaki;
+    text-align: center;
+    padding: 0px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0;
+    height: 0px;
+    transition: all 0.75s ease-in-out;
+}
+.first>:hover .second {
+    opacity: 1;
+    height: 117px;
+}
+.second>li>a {
+    padding: 20px 58px 20px 34px;
+}  
+.second>li>a:hover {
+    background-color:darkgoldenrod;
+}
+.second>ul {
+    position: relative;
+}
+.third {
+    background-color:darkgoldenrod;
+    position: absolute;
+    top: 58px;
+    left: 153px;
+    text-align: center;
+    min-width: 120px;
+    padding: 0px;
+    opacity: 0;
+    height: 0px;
+    transition: all 750ms ease-in-out;
+}
+.third>li>a {
+    padding: 20px 24px 20px 24px ;
+}
+.third>li>a:hover {
+    background-color: darkgrey;
+}
+.second>li:hover .third {
+    opacity: 1;
+    height: 116px;
+}
+.second>li:hover .first {
+    background-color:darkkhaki;    
+}
+main {
+    background-color: antiquewhite;24
